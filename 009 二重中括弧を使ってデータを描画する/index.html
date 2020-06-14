@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <p>{{ message }}</p>              <!-- vueファイルとデータをやり取りするのが二重括弧の内の物 -->
+    <p>{{ number+5 }}</p>             <!-- numberに5を足して出力 -->
+    <p>{{ ok ? 'YES' : 'NO' }}</p>    <!-- okである場合YESを出力し、そうでない場合はNOを出力 -->
+    <p>{{ sayHi() }}</p>
+  </div>
+
+
+  <script src="vue.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

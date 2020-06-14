@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <p>現在{{ number }}回クリックされています</p>
+    <button v-on:click="countUp(2)">カウントアップ</button>
+    <p v-on:mousemove="changeMousePosition(10, $event)">
+      マウスを載せてください
+      <span v-on:mousemove.stop>反応しないでください</span>
+    </p>
+    <a v-on:click.prevent href="https://google.com">Google</a>
+    <p>X：{{x}}, Y：{{y}}</p>
+    <!-- <input type="text" v-on:keyup.enter="myAlert"> -->
+    <!-- <input type="text" v-on:keyup.space="myAlert"> -->
+    <input type="text" v-on:keyup.space.enter="myAlert">
+
+  </div>
+
+
+  <script src="vue.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

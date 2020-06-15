@@ -10,7 +10,9 @@
 
   <div id="app">
     <h1 v-bind:class="{red: true, 'bg-blue': isActive}">Hello</h1>
-    <button v-on:click="isActive = !isActive"></button>
+    <button v-on:click="isActive = !isActive">スタイル変更</button>
+
+    <h1 v-bind:class="[{red: isActive}, bg]">Hello</h1>
   </div>
 
 

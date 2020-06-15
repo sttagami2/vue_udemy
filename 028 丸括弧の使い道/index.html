@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <button @click="countUp">+1</button>
+    <button @click="countUp()">+1</button>
+    <p>{{ doubleCounterComputed }}</p>
+    <p>{{ doubleCounterMethod() }}</p>
+    <!-- メソッドの場合は必ずカッコをつけること -->
+    <!-- ※ディレクティブの際はつけなくても良い -->
+  </div>
+
+
+  <script src="vue.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

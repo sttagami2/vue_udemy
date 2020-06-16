@@ -1,7 +1,6 @@
 new Vue({
   el: '#app',
   data: {
-    ok: false,
-    maybeOk: true
+    ok: true
   }
 })

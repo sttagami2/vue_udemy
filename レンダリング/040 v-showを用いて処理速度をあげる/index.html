@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <button v-on:click="ok = !ok">ボタン</button>
+    <p v-if="ok">If</p>
+    <p v-show="ok">Show</p>
+    <p v-show="!ok">no ok</p>
+    <!-- v-showはtemplateタグが使えない ※下コメント参考 -->
+    <!-- v-showはelseが使えない -->
+    <!-- v-showは読み込み遅い -->
+    <!-- v-ifはv-showより切り替える時の処理が遅い -->
+    <!-- 頻繁に切り替える時はv-showを使うと良い -->
+
+    <!-- <template v-show="ok">
+      <p>test</p>
+    </template> -->
+  </div>
+
+
+  <script src="vue.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

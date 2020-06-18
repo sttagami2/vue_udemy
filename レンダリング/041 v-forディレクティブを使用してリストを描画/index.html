@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <!-- <ul>
+      <li>りんご</li>
+      <li>バナナ</li>
+      <li>ぶどう</li>
+    </ul> -->
+
+    <ul>
+      <li v-for="fruit in fruits">{{ fruit }}</li>
+    </ul>
+  </div>
+
+
+  <script src="vue.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

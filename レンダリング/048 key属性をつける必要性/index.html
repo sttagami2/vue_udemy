@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <ul>
+      <div v-for="fruit in fruits" :key="fruit">
+        <li>{{ fruit }}</li>
+        <input type="text">
+        <!-- 要素の移動を最小限にしようとするアルゴリズムが適用されている -->
+      </div>
+    </ul>
+
+    <button @click="remove">先頭を削除</button>
+  </div>
+
+
+  <script src="vue.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
